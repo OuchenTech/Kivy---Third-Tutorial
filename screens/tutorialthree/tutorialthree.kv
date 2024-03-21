@@ -1,0 +1,130 @@
+#: import hex kivy.utils.get_color_from_hex
+#: import Gradient kivy_gradient.Gradient
+
+<TutorialThree>
+
+    MDFloatLayout:
+        size: self.width, self.height
+        md_bg_color: 'skyblue'
+        
+        FloatLayout:
+            size_hint: .25, None
+            height: self.width
+            pos_hint: {'center_x': .2, 'center_y': .8}
+            canvas:
+                Color:
+                    rgba: 1, 1, 1, 1
+                    
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+                    
+        FloatLayout:
+            size_hint: .25, None
+            height: self.width
+            pos_hint: {'center_x': .5, 'center_y': .8}
+            canvas:
+                Color:
+                    rgba: 1, 1, 1, 1
+                    
+                RoundedRectangle:
+                    pos: self.pos
+                    size: self.size
+                    radius: 20, 20, 20, 20
+                    
+        FloatLayout:
+            size_hint: .25, None
+            height: self.width
+            pos_hint: {'center_x': .8, 'center_y': .8}
+            canvas:
+                Color:
+                    rgba: 1, 1, 1, 1
+                    
+                Ellipse:
+                    pos: self.pos
+                    size: self.size
+                    
+        FloatLayout:
+            size_hint: .35, None
+            height: self.width
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            
+            canvas.before:
+                Color:
+                    rgba: 0, 0, 0, .35
+                BoxShadow:
+                    pos: self.pos
+                    size: self.size
+                    blur_radius: 16
+                    border_radius: 10, 10, 10, 10
+                    
+            canvas:
+                Color:
+                    rgba: 1, 1, 1, 1
+                    
+                RoundedRectangle:
+                    pos: self.pos
+                    size: self.size
+                    radius: 10, 10, 10, 10
+                    
+        FloatLayout:
+            size_hint: .4, .25
+            pos_hint: {'center_x': .25, 'center_y': .2}
+            
+            canvas.before:
+                Color:
+                    rgba: 0, 0, 0, .35
+                BoxShadow:
+                    pos: self.pos
+                    size: self.size
+                    blur_radius: 16
+                    border_radius: 10, 10, 10, 10
+                    
+            canvas:
+                Color:
+                    rgba: 1, 1, 1, 1
+                    
+                RoundedRectangle:
+                    pos: self.pos
+                    size: self.size
+                    radius: 10, 10, 10, 10
+                    texture: Gradient.horizontal(hex('#7b4397'), hex('#dc2430'))
+                    
+        FloatLayout:
+            size_hint: .4, .25
+            pos_hint: {'center_x': .75, 'center_y': .2}
+            
+            canvas.before:
+                Color:
+                    rgba: 0, 0, 0, .35
+                BoxShadow:
+                    pos: self.pos
+                    size: self.size
+                    blur_radius: 16
+                    border_radius: 10, 10, 10, 10
+                    
+            canvas:
+                Color:
+                    rgba: 1, 1, 1, 1
+                    
+                RoundedRectangle:
+                    pos: self.pos
+                    size: self.size
+                    radius: 10, 10, 10, 10
+                    texture: Gradient.vertical(hex('#43cea2'), hex('#185a9b'))
+                    
+        
+                    
+        
+                    
+                    
+        
+            
+                    
+            
+            
+            
+            
+            
+            
+            
